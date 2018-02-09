@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Tablas</title>
+</head>
+<body>
+	<!-- tablas -->
+	<table border="1"><!-- border se reemplaza con css -->
+		<caption>Estudiantes</caption><!--Titulo de la tabla-->
+		<colgroup>
+			<!--col span="n" -> para saltar columnas-->
+			<col style="background-color: blue">
+			<col style="background-color: yellow">
+			<col style="background-color: fuchsia">
+			<col style="background-color: steelblue">
+			<col style="background-color: grey">
+		</colgroup>
+		<thead>
+		<tr><!-- fila -->
+			<th rowspan="2">username</th><!-- columna cabecera -->
+			<th rowspan="2">email</th>
+			<th colspan="2">name</th>
+			<th rowspan="2">country</th>
+		</tr>
+		<tr><!-- fila -->
+			<th>firstname</th>
+			<th>lastname</th>
+		</tr>
+		</thead>
+		<tbody>
+		<tr><!-- fila -->
+			<td>juan</td><!-- columna de datos -->
+			<td>juan@g.com</td>
+			<td>juan</td>
+			<td>perez</td>
+			<td>chile</td>
+		</tr>
+		<tr><!-- fila -->
+			<td>juan</td><!-- columna de datos -->
+			<td>juan@g.com</td>
+			<td>juan</td>
+			<td>perez</td>
+			<td>chile</td>
+		</tr>
+		<tr><!-- fila -->
+			<td>juan</td><!-- columna de datos -->
+			<td>juan@g.com</td>
+			<td>juan</td>
+			<td>perez</td>
+			<td>chile</td>
+		</tr>
+		</tbody>
+		<tfoot>
+			<tr style="background-color: red">
+				<td colspan="3">Total de estudiantes</td>
+				<td colspan="2">3</td>
+				<!--
+					Atributos de td - th
+					rowspan="n" (combina filas)
+					colspan="n" (combina columnas)
+				-->
+			</tr>
+		</tfoot>
+	</table>	
+</body>
+</html>
