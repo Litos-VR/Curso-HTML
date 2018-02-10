@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Imagenes</title>
+</head>
+<body>
+	
+	<h1>Imagenes</h1>
+	<img src="img/Chrysanthemum.jpg" width="300">
+	<!--
+		src="ruta de la imagen"
+		alt="descripcion de la imagen"
+		
+		height="n" -> altura
+		width="n" -> tamaño
+		-> puede ser modificado desde css
+	-->
+	
+	<img
+		srcset="
+				img/Desert.jpg 100w,
+				img/Tulips.jpg 500w
+				"
+		src="img/Koala.jpg" 
+		alt=""
+	>
+	<!--Audio-->
+	<audio src="media/audio.mp3" controls=""></audio>
+	<!--Picture-->
+	
+	<picture>
+		<!--Art direction-->
+		<source srcset="img/Desert.jpg" media="(min-width: 800px)">
+		<source srcset="img/Tulips.jpg" media="(min-width: 500px)">
+		<img src="img/Koala.jpg" alt="Perro en el bosque">
+	</picture>
+	
+	<!--Figure
+	Imagenes y conjunto de imagenes con descripción o referencia
+	-->
+	<figure>
+		<img src="img/Penguins.jpg" alt="Pingüinos jugando">
+		<figcaption>Pingüinos en la nieve</figcaption>
+	</figure>
+	
+	<!--Multimedia - Codec H264-->
+	<video 
+		src="media/Video.mp4"
+		width="500px"
+		autobuffer autoloop loop controls poster="/images/video.png"
+		autoplay=""
+		muted="">
+</body>
+</html>
