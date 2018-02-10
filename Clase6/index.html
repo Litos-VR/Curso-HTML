@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Formularios</title>
+</head>
+<body>
+	<h1>Clase 6 - Formularios</h1>
+
+	<form action="">
+		<fieldset>
+			<legend>Tipos de input</legend>
+		<label>Nombre: 
+			<input type="text">
+		</label>
+		<br>
+		<label>Email: 
+			<input type="email">
+		</label>
+		<br>
+		<label>Password: 
+			<input type="password">
+		</label>
+		<br>
+		<label>Telefono: 
+			<input type="tel">
+		</label>
+		<br>
+		<label>Número: 
+			<input type="number">
+		</label>
+		<br>
+		<label>Buscar: 
+			<input type="search">
+		</label>
+		<br>
+		<label>Fecha: 
+			<input type="date">
+		</label>
+		<br>
+		<label>Hora: 
+			<input type="time">
+		</label>
+		<br>
+		<label>Check: 
+			<input type="checkbox" checked="true">
+		</label>
+		<br>
+		<label>Radio: 
+			<input type="radio" name="radio1">
+			<input type="radio" name="radio1">
+		</label>
+		<br>
+		<label>Rango: 
+			<input type="range" min="0" max="100" step="10" value="50">
+		</label>
+		<br>
+		<label>Archivo: 
+			<input type="file">
+		</label>
+		<br>
+		<select name="pais" id="pais">
+			<optgroup label="Europa">
+				<option value="España">España</option>
+			</optgroup>
+			<optgroup label="America">
+				<option value="Chile">Chile</option>
+				<option value="Mexico">Mexico</option>
+			</optgroup>
+		</select>
+		<br>
+		<textarea name="mensaje" id="mensaje" cols="30" rows="10" maxlength="50">
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias minus delectus, magni aperiam. Soluta quis, nulla nihil repellendus dicta obcaecati eos quos, minima sapiente consequatur eligendi officia voluptatem quisquam libero.
+		</textarea>
+		<br>
+		<input list="paises">
+		<datalist id="paises">
+			<option value="España">España</option>
+			<option value="Francia">Francia</option>
+			<option value="Macedonia">Macedonia</option>
+		</datalist>
+		<br>
+		<label>Reset: 
+			<input type="reset">
+		</label>
+		<br>
+		<label>Color: 
+			<input type="color">
+		</label>
+		<br>
+		<input type="submit">
+		</fieldset>
+	</form>
+
+	<form action="index.php" method="post">
+		<label for="nombres">Nombres: </label>
+		<input type="text" id="nombres" name="nombres">
+		<label>Apellidos: 
+		<input type="text" name="apellidos">
+		</label>
+	</form>
+
+
+	<form>
+		<!--
+			Para enviar el formulario se agrega action=".php" y method="post - get"
+			* Elementos que reciben información
+			* Elementos que muestran información
+			* Elementos para agregar
+		-->
+		<fieldset>
+			<legend>Datos personales</legend>
+			<label>Su nombre: </label>
+			<input type="text">
+			<br>
+			<label>Su apellido: </label>
+			<input type="text">
+		</fieldset>
+		<br>
+		<fieldset>
+			<legend>Dirección</legend>
+			<label>Calle: </label>
+			<input type="text">
+			<br>
+			<label>Pais: </label>
+			<input type="text">
+		</fieldset>
+		<button>Enviar</button>
+		<!--
+			Alternativas a button
+			<input type="submit" value="label">
+			<input type="image" src="../">
+		-->
+		</form>
+</body>
+</html>
